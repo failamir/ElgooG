@@ -1,0 +1,766 @@
+/*==================
+NAME : GOOGLE GRID
+Ver : 0.0
+=================*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEE;
+}
+
+.left-menu {
+    left: 0;
+    height: 1000px;
+    width: 95px;
+    background-color: #FFFFFF;
+    position: absolute;
+    border-right: 1px solid #d2d2d2;
+    box-sizing: border-box;
+    z-index: 200;
+    overflow: hidden;
+}
+
+.left-menu ul {
+    position: absolute;
+    padding: 0;
+    list-style: none;
+    width: 95.5px;
+}
+
+.left-menu ul li {
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d2d2d2;
+    z-index: 50;
+}
+
+.left-menu ul li img {
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+}
+
+.int .left-menu {
+    float: left;
+}
+
+.main-container {
+    box-sizing: border-box;
+    width: 1207px;
+    height: 1030px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*==================START UPGRADE =================*/
+
+.relative {
+    position: relative;
+}
+
+.upgrade {
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 482px;
+    height: 340px;
+    left: 10%;
+    top: 20px;
+    overflow: hidden;
+}
+
+.upgrade button {
+    border: 1px solid #3079ed;
+    background-color: #4888ee;
+    width: 146px;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute;
+    left: 318px;
+    top: 20px;
+    border-radius: 2px;
+}
+
+.upgrade-dots {
+    color: #c7c7c7;
+    top: 91%;
+    position: absolute;
+    left: 22%;
+    font-size: 13px;
+}
+
+.upgrade-dots a {
+    text-decoration: none;
+    color: #c7c7c7;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.upgrade-dots a:hover {
+    color: #ffc228
+}
+
+.upgrade-dots .dot-active {}
+
+.upgrade h2 {
+    position: absolute;
+    width: 53%;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 28px;
+    top: 55px;
+    left: 40px;
+    font-size: 26px;
+}
+
+.upgrade p {
+    position: absolute;
+    width: 48%;
+    color: #7d7272;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    top: 160px;
+    left: 39px;
+    font-size: 13px;
+}
+
+.upgrade-yellow-circle {
+    width: 40px;
+    height: 40px;
+    border: 15px solid #ffc228;
+    border-radius: 50%;
+    left: 285px;
+    top: 116px;
+    position: absolute;
+}
+
+.upgrade-blue-circle {
+    width: 124px;
+    height: 131px;
+    border: 24px solid #2a70e8;
+    border-radius: 50%;
+    left: 351px;
+    top: 138px;
+    position: absolute;
+    z-index: 2;
+}
+
+.upgrade-red-circle {
+    width: 124px;
+    height: 122px;
+    border: 24px solid #d94335;
+    border-radius: 50%;
+    left: 275px;
+    top: 204px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+/*==================END UPGRADE=================*/
+
+
+/*================== START GMAIL =================*/
+
+.gmail {
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    background-color: #abcbd6;
+    border-radius: 5px;
+    width: 230px;
+    height: 290px;
+    left: 51.5%;
+    top: 20px;
+}
+
+.gmail img {
+    position: absolute;
+    height: 132px;
+    width: 140px;
+    top: 50px;
+    left: 42px;
+}
+
+.gmail .dark-color {
+    position: absolute;
+    height: 95px;
+    width: 230px;
+    background-color: #8cbecf;
+    top: 67%;
+    border-radius: 5px;
+}
+
+.gmail .dark-color h4 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.gmail .dark-color p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: absolute;
+    left: 4%;
+    line-height: 15px;
+    top: 30%;
+    width: 91%;
+    font-size: 12px;
+    margin: 0;
+
+}
+
+
+/*================== END GMAIL =================*/
+
+
+/*================== START MAPS =================*/
+
+.maps {
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    background-color: #f8bd27;
+    border-radius: 5px;
+    width: 228px;
+    height: 370px;
+    left: 72.1%;
+    top: 20px;
+    overflow: hidden;
+}
+
+.maps img:nth-child(1) {
+    position: absolute;
+    height: 132px;
+    width: 140px;
+    top: 81px;
+    left: 42px;
+    z-index: 99999;
+}
+
+.maps img:nth-child(2) {
+    opacity: 0.3;
+    position: absolute;
+    left: -126px;
+}
+
+.maps .dark-color {
+    position: absolute;
+    height: 95px;
+    width: 228px;
+    background-color: #f2b51c;
+    top: 74%;
+    border-radius: 5px;
+}
+
+.maps .dark-color h4 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.maps .dark-color p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: absolute;
+    left: 4%;
+    line-height: 15px;
+    top: 30%;
+    width: 95%;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+/*================== END MAPS =================*/
+
+
+/*================== START BLOGGER =================*/
+
+.blogger {
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    background-color: #ce483d;
+    border-radius: 5px;
+    width: 230px;
+    height: 250px;
+    left: 10%;
+    top: 37%;
+}
+
+.blogger img {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 28px;
+    left: 62px;
+}
+
+.blogger .dark-color {
+    position: absolute;
+    height: 95px;
+    width: 230px;
+    background-color: #bd4036;
+    top: 61%;
+    border-radius: 5px;
+}
+
+.blogger .dark-color h4 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.blogger .dark-color p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: absolute;
+    left: 4%;
+    line-height: 15px;
+    top: 30%;
+    width: 89%;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+/*================== END BLOGGER =================*/
+
+
+/*================== START CHROME =================*/
+
+.chrome {
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    background-color: #79302a;
+    border-radius: 5px;
+    width: 230px;
+    height: 330px;
+    left: 31%;
+    top: 37%;
+}
+
+.chrome img {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 28px;
+    left: 40px;
+}
+
+.chrome .dark-color {
+    position: absolute;
+    height: 95px;
+    width: 230px;
+    background-color: #662621;
+    top: 71%;
+    border-radius: 5px;
+}
+
+.chrome .dark-color h4 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.chrome .dark-color p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: absolute;
+    left: 4%;
+    line-height: 15px;
+    top: 30%;
+    width: 95%;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+/*================== END CHROME =================*/
+
+
+/*================== START NEWS =================*/
+
+.news {
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    background-color: #7bc1a1;
+    border-radius: 5px;
+    width: 230px;
+    height: 250px;
+    left: 51.5%;
+    top: 31.4%;
+}
+
+.news img {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 35px;
+    left: 64px;
+}
+
+.news .dark-color {
+    position: absolute;
+    height: 95px;
+    width: 230px;
+    background-color: #5eb990;
+    top: 71%;
+    border-radius: 5px;
+}
+
+.news .dark-color h4 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.news .dark-color p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: absolute;
+    left: 4%;
+    line-height: 15px;
+    top: 30%;
+    width: 90%;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+/*================== END NEWS =================*/
+
+
+/*================== START SEARCH =================*/
+
+.search {
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    background-color: #2a70e8;
+    border-radius: 5px;
+    width: 230px;
+    height: 295px;
+    left: 72.1%;
+    top: 39%;
+}
+
+.search img {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 39px;
+    left: 60px;
+    border-radius: 15px;
+}
+
+.search .dark-color {
+    position: absolute;
+    height: 95px;
+    width: 230px;
+    background-color: #0957db;
+    top: 71%;
+    border-radius: 5px;
+}
+
+.search .dark-color h4 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.search .dark-color p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: absolute;
+    left: 4%;
+    line-height: 15px;
+    top: 30%;
+    width: 92%;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+/*================== END SEARCH =================*/
+
+
+/*================== START ANDROID =================*/
+
+.android {
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    background-color: #8eb021;
+    border-radius: 5px;
+    width: 230px;
+    height: 323px;
+    left: 10%;
+    top: 62.4%;
+}
+
+.android img {
+    position: absolute;
+    width: 187px;
+    top: 22px;
+    left: 24px;
+    opacity: 0.7;
+}
+
+.android .dark-color {
+    position: absolute;
+    height: 95px;
+    width: 230px;
+    background-color: #7e9d1c;
+    top: 71%;
+    border-radius: 5px;
+}
+
+.android .dark-color h4 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.android .dark-color p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: absolute;
+    left: 4%;
+    line-height: 15px;
+    top: 30%;
+    width: 95%;
+    font-size: 12px;
+    margin: 0;
+
+}
+
+
+/*================== END ANDROID =================*/
+
+
+/*================== MUSIC START =================*/
+
+.music {
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    background-color: #ffd006;
+    border-radius: 5px;
+    width: 230px;
+    height: 250px;
+    left: 31%;
+    top: 70.4%;
+}
+
+.music img {
+    position: absolute;
+    top: 27px;
+    left: 57px;
+}
+
+.music .dark-color {
+    position: absolute;
+    height: 95px;
+    width: 230px;
+    background-color: #ebc009;
+    top: 71%;
+    border-radius: 5px;
+}
+
+.music .dark-color h4 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.music .dark-color p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: absolute;
+    left: 4%;
+    line-height: 15px;
+    top: 30%;
+    width: 90%;
+    font-size: 12px;
+    margin: 0;
+
+}
+
+
+/*================== END MUSIC  =================*/
+
+
+/*================== Earth START =================*/
+
+.earth {
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    background-color: #101e55;
+    border-radius: 5px;
+    width: 230px;
+    height: 377px;
+    left: 51.5%;
+    top: 58.9%;
+    overflow: hidden;
+}
+
+.earth img {
+    position: absolute;
+}
+
+.earth .dark-color {
+    position: absolute;
+    height: 95px;
+    width: 228px;
+    background-color: #0b163f;
+    top: 74%;
+    border-radius: 5px;
+}
+
+.earth .dark-color h4 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.earth .dark-color p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: absolute;
+    left: 4%;
+    line-height: 15px;
+    top: 30%;
+    width: 95%;
+    font-size: 12px;
+    margin: 0;
+
+}
+
+
+/*================== END Earth =================*/
+
+
+/*================== START YOUTUBE =================*/
+
+.youtube {
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    background-color: #2b2423;
+    border-radius: 5px;
+    width: 230px;
+    height: 250px;
+    left: 72.2%;
+    top: 68.9%;
+}
+
+.youtube img {
+    position: absolute;
+    top: 16px;
+    left: 38px;
+    width: 150px;
+}
+
+.youtube .dark-color {
+    position: absolute;
+    height: 95px;
+    width: 230px;
+    background-color: #151111;
+    top: 71%;
+    border-radius: 5px;
+}
+
+.youtube .dark-color h4 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.youtube .dark-color p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: absolute;
+    left: 4%;
+    line-height: 15px;
+    top: 30%;
+    width: 90%;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+/*================== END YOUTUBE =================*/
+
+img.up:hover {
+    cursor: pointer;
+    top: 20px;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+}
+
+li.up:hover {
+    cursor: pointer;
+    /* right: 10px; */
+    padding-left: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #d2d2d2;
+    z-index: 50;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+}
