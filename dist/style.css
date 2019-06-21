@@ -18,7 +18,7 @@ button {
 }
 
 
-/* Top Toolbar */
+/* Awal dari Top Toolbar */
 
 .top-toolbar {
 	height: 50px;
@@ -61,8 +61,8 @@ button {
 	position: relative;
 	top: 7px;}
 
-/* End of Top Toolbar */
-/* Search */
+/* Akhir dari Top Toolbar */
+/* Awal dari Search */
 
 .search {
 	text-align: center;
@@ -121,8 +121,8 @@ button {
 	box-shadow: 1px 1px 1px rgba(0,0,0,.1);
 }
 
-/* End of Search */
-/* Footer */
+/* Akhir dari Search */
+/* Awal dari Footer */
 
 footer {
 	position: fixed;
@@ -185,8 +185,9 @@ footer nav a:hover {
 	color: #000000;
 }
 
-/* End of Footer */
+/* Akhir dari Footer */
 
+/* Ini untuk responsiv */
 @media screen and (max-width: 510px) {
 	.top-toolbar nav a:nth-child(2), a:nth-child(3), footer {
 		display:none;
