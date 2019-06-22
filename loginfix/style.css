@@ -105,11 +105,20 @@ button {
   border-radius: 5px;
   height: 40px;
   width: 90px;
-  background-color: #4285f4;
+  /*background-color: #4285f4;*/
+  background-image: -webkit-linear-gradient(top left, #2a4067 0%, #f145ac 100%);
   border: none;
   color: #ffffff;
   text-align: center;
   font-size: 14px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.26);
   margin-top: 30px;
+}
+
+button:hover{
+  box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+  background-image: -webkit-linear-gradient(top left, #25fff5 0%, #0058ff 100%);
+  color: white;
+  border: 1px darkblue;
+  font-size: 9.5pt; 
 }
