@@ -9,8 +9,10 @@ body {
   left: 0;
   top: 0;
   position: relative;
-  background: url('img/stars.png') no-repeat left center / cover;
+  background: url('img/rubik.jpg') no-repeat left center / cover;
+  background-size: cover;
   /* background: opacity: 0.5 ; */
+  
 }
 
 .bg-transparent{
@@ -129,29 +131,35 @@ button {
 /* Awal dari Search */
 
 .search {
-	text-align: center;
+	padding: 15px;
+	margin-left: 20px;
+	text-align: left;
 	clear: both;
 	margin: 11% 0 0 0;
 	border-color: #ffffff;
 	/*position: absolute;*/
+	margin-top: -70px;
+
 }
 
 .logo {
+	text-align: center;
 	max-width: 21%;
-	margin: 0 auto;
+	margin: 10 auto;
 }
 
 .logov2 {
 	max-width: 21%;
-	margin: 0 auto;
+	margin: 10 auto;
 	text-align: center;
 }
 
 .search img {
 	margin-bottom: 3%;
 	max-width: 160%;
-	text-align: left;
+	text-align: center;
 	font-size: 0%;
+
 }
 
 .search img:hover{
@@ -159,9 +167,11 @@ button {
 	width: 115%;
 	box-shadow: 1px 1px 1px rgba(0,0,0,.1);
 	font-size: 400%;
-	text-align: left;
+	/*text-align: left;*/
 	float: left;
 	margin-right: 50px;
+	-webkit-transition: 0.5s all;
+    transition: 0.5s all;
 }
 
 .search input {
@@ -319,7 +329,30 @@ footer nav a:hover {
 		display:none;
 	}
 
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
 	.logo {
 		max-width: 40%;
 	}
+}
+
+
+.row {
+	margin-top: 100px;
+	text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+	width: 100%;
+	height: 50%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
