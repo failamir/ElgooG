@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elgoog Drive: Free Cloud Storage</title>
+	<link rel="stylesheet" type="text/css" href="edrivehome.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="header">
+	<div id="mySidepanel" class="sidepanel">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+		<a href="#">Go to Elgoog Drive</a>
+		<a href="#">Using Elgoog Drive</a>
+		<a href="#">Download</a>
+		<a href="#">For Business</a>
+		<a href="#">Help</a>
+	</div>
+	<button class="openbtn" style="padding: 3px 15px;" onclick="openNav()">
+		<img src="src/img4.png">
+	</button>
+	<a class="openbtn home" href="#">Elgoog Drive</a>
+</div>
+
+<div class="slideshow-container">
+	<div class="mySlides fade">
+	    <div class="numbertext">1 / 3</div>
+	    <img src="src/img1.png" style="width:100%; height: 453px;">
+	    <div class="text">Elgoog Drive</div>
+  	</div>
+
+  	<div class="mySlides fade">
+	    <div class="numbertext">2 / 3</div>
+	    <img src="src/img2.jpg" style="width:100%; height: 453px;">
+	    <div class="text">Caption Two</div>
+ 	</div>
+
+  	<div class="mySlides fade">
+	    <div class="numbertext">3 / 3</div>
+	    <img src="src/img3.jpg" style="width:100%; height: 453px;">
+	    <div class="text">Caption Three</div>
+  	</div>
+  	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<br>	
+
+
+<div class="container">
+	<a href="#">For Personal Use</a>
+	<a href="#">For Business Use</a>
+</div>
+
+<div class="footer">
+	<div class="row">
+		<div class="column">
+		<ul class="left">
+			<li><h2>About Drive</h2></li>
+			<li><a href="#">Meet Elgoog Drive</a></li>
+			<li><a href="#">Using Drive</a></li>
+			<li><a href="#">Get Started with Elgoog</a></li>
+		</div>
+  		<div class="column">
+  		<ul class="left">
+  			<li><h2>Storage plans and pricing</h2></li>
+  			<li><a href="#">Get more storage</a></li>
+  			<li><a href="#">Pricing FAQs</a></li>
+  			<li><a href="#">Free up space</a></li>
+  		</div>
+  		<div class="column">
+  		<ul class="left">
+  			<li><h2>Downloads</h2></li>
+  			<li><a href="#">E-Drive for Mac</a></li>
+  			<li><a href="#">E-Drive for Android</a></li>
+  			<li><a href="#">E-Drive for iOS</a></li>
+  		</div>
+  		<div class="column">
+  		<ul class="left">
+  			<li><h2>Support</h2></li>
+  			<li><a href="#">Help Center for E-Drive</a></li>
+  			<li><a href="#">Elgoog Drive Help Forum</a></li>
+  			<li><a href="#">Contact Us</a></li>
+  		</ul>
+  		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+/* Set the width of the sidebar to 250px (show it) */
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+} 
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+
+</script>
+</body>
+</html>
