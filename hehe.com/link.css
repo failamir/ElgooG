@@ -1,0 +1,296 @@
+* {
+    margin:-2; 
+    padding:2;
+}
+
+.semua {
+	background:blue;
+	width: 100%;
+}
+
+.navbar {
+	position: fixed;
+	background:blue;
+	width: 100%;
+	height: 45px;
+	z-index:2;
+	 box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+
+}
+input{
+	margin-top: -10px;
+}
+.navbar .judul
+{
+	padding-bottom: 10px;
+	font-size: 40px;
+	color: white;
+	margin-left: 5%;
+	text-align:center
+
+}
+
+.navbar .search {
+	/*margin-bottom: 5px;*/
+	margin: 
+	margin-left: 2%;
+	width: 300px;
+	height: 30px;
+}
+
+.navbar .cari {
+	margin-left: 2px;
+	width: 50px;
+	height: 30px;
+	color: white;
+	background-color: #0066FF;
+	border: 0px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+
+}
+
+.all{
+	background: blue;
+	width: 1000px;
+	margin: 5px auto;
+}
+ 
+/*bagian header*/
+.all .header{
+	color:white;
+	font-size:20px;
+	background: #505052;
+	height: 0px;
+	padding: 2px;
+}
+/*akhir header*/
+
+
+
+
+.all .contain .mySlides {display:none;}
+
+.all .contain .kiri {
+	position: absolute;
+	height: 20px;
+	width: 25px;
+	margin-left: 875px;
+	top: 270px;
+}
+
+
+.all .contain .kanan {
+	position: absolute;
+	height: 20px;
+	width: 25px;
+	top: 270px;
+}
+
+
+
+.all .active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.all .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+.badan{
+	height: 900px;
+}
+/*bagian sidebar*/
+.all .badan .kiri{
+	font-family: calibri light;
+	text-align:center;
+	color: white;
+	background: #64b597;
+	float: left;	
+	width: 70%;
+	height: 100%;
+	
+}
+.all .badan .kiri .parag{
+	font-family: segoe script;
+	font-size:20px;
+	text-align:left;
+	margin-left:20px;
+}
+
+.all .badan .kiri .border {
+margin-top: 150px;
+border-radius:100em;
+border:5px solid white;
+width:200px;
+height:200px;
+}
+ 
+
+
+
+ 
+.all .badan .kanan{
+	font-size:12px;
+	font-family: calibri light;
+	background: #ede5ce;
+	float: right;
+	height: 100%;
+	width: 30%;	
+}
+
+.all .badan .kanan .kotak{
+	margin-left:30px;
+	margin-top:50px;
+	font-size: 30px;
+	font-family: rockwell;
+	text-align:center;
+	background-color: #505052;
+	width: 200px;
+	height:40px;
+	color:white;
+}
+
+.all .badan .kanan .tahun{
+	margin-left: 40px;
+	font-family:nirmala ui;
+	font-color: #505052;
+	font-size: 15px;
+	}
+
+	.all .badan .kanan .sekolah{
+	margin-left: 40px;
+	font-family:square 721 bt;
+	font-color: #505052;
+	font-size: 15px;
+	}
+	
+.all .badan .kanan .informasi{
+	width:10px;
+	height:10px;
+}
+ 
+.footer {
+	padding: 0;
+	margin: 0;
+	background: darkblue;
+	overflow: hidden;
+	width: 100%;
+
+}
+
+.footer .copyright {
+	width: 500px;
+	margin-left: 33%;
+	margin-right: 0;
+	color: white;
+	text-align: center;
+} 
+
+
+
+.gambartumb{
+	width: 198px;
+	height: 112px;
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+.all .vid-ul{
+  display: block;
+  list-style-type: none;
+  height:  374px;
+  padding-left: 5px;
+  background-color: ;
+}
+.all .vid-li{
+  display: inline-block;
+  height:  175px;
+  width: 196px;
+  margin-right: 5px;
+  margin-top: 10px;
+  background-color: ;
+  
+}
+.all .vid{
+  width: 196px;
+  height: 110px;
+  margin: 0;
+  background-color: blue;
+}
+
+.all .vid-data{
+  margin: 0;
+  padding: 0;
+  background-color: ;
+}
+.all .title{
+  display: block;
+  height: 20px;
+  width: 180px;
+  margin-top: 5px;
+  padding: 0;
+  background-color: blue;
+  
+}
+.all .title-name{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: white;
+}
+.all .channel{
+  height: 15px;
+  width: 196px;
+  margin-top: -3px;
+  background-color: blue;
+}
+.all .channel-name{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  font-family: sans-serif;
+  color: white;
+}
+.all .views-box{
+  postion: relative;
+  height: 15px;
+  width: 196px;
+  margin-top: -5px;
+  padding: 0;
+  background-color:blue ;
+}
+.all .views-data{
+  positon: relative;
+  font-family: sans-serif;
+  color: white;
+  font-size: 11px;
+}
+.title-kategori {
+	color: white;
+}
+
+
+

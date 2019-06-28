@@ -9,7 +9,7 @@ body {
   left: 0;
   top: 0;
   position: relative;
-  background: url('img/rubik.jpg') no-repeat left center / cover;
+  background: url('img/bgweb.jpg') no-repeat left center / cover;
   background-size: cover;
   /* background: opacity: 0.5 ; */
   
@@ -90,7 +90,7 @@ button {
 
 .top-toolbar nav a {
 	margin: 3px 6px;
-	color: #ffffff;
+	color: #000;
 }
 
 .top-toolbar nav a:hover {
