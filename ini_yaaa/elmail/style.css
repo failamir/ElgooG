@@ -1,0 +1,347 @@
+/* Reset */
+
+html { box-sizing: border-box; }
+html *,
+html *:before,
+html *:after { box-sizing: inherit; }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Global */
+
+html,
+body { height: 100%; }
+
+body {
+  padding: 2.75rem;
+  font: 300 1rem/1.375rem 'Roboto', sans-serif;
+  background: #232427;
+}
+
+h1 {
+  color: #434753;
+  font-size: 2rem;
+}
+h2 {
+  margin: 0.125rem 0;
+  font-weight: 500;
+}
+h3 { font-weight: 500; }
+
+p { margin-bottom: 1.375rem; }
+
+input[type="text"],
+input[type="search"] {
+  width: 320px;
+  padding: 0.5rem;
+  font-weight: 300;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  background: rgba(67,71,83,0.1);
+  border: 1px solid rgba(0,0,0,0.15);
+}
+
+.button {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  color: #b3b6c0;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 0.25rem;
+}
+.button:hover {
+  color: #434753;
+  border-color: rgba(0,0,0,0.3);
+}
+.button:active {
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.25);
+}
+
+.inbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+}
+
+.avatar {
+  float: left;
+  display: block;
+  width: 3.5rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+.date {
+  position: absolute;
+  right: 1.375rem;
+  font-weight: 400;
+  font-size: small;
+  opacity: 0.5;
+}
+
+.address {
+  padding: 0.25rem 0.5rem;
+  color: rgba(0,0,0,0.5);
+  font-size: small;
+  font-weight: normal;
+  background: lightblue;
+  border-radius: 1rem;
+}
+
+.no-messages {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: rgba(0,0,0,0.3);
+  font-weight: 500;
+  text-align: center;
+}
+.no-messages i {
+  overflow: hidden;
+  font-family: inherit;
+  font-weight: 500;
+}
+.no-messages i:before {
+  display: block;
+  font-family: 'FontAwesome';
+  font-size: 8rem;
+}
+
+
+/* Header */
+
+.main-header {
+  position: relative;
+  display: flex;
+  flex: 0 0 5rem;
+  align-items: center;
+  padding: 1.375rem;
+  margin-top: 1.4375rem;
+  color: #434753;
+  background: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+.main-header:before {
+  content: 'GOTmail';
+  position: absolute;
+  top: -1.4375rem;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1.4375rem;
+  font-size: 0.875rem;
+  text-align: center;
+  font-weight: 400;
+  background: linear-gradient(to bottom, #eff1f2, #bec0c2);
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  border-radius: 0.31275rem 0.3125rem 0 0;
+}
+.main-header:after {
+  content: '';
+  position: absolute;
+  top: -1.125rem;
+  left: 0.5rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  background: currentColor;
+  border-radius: 50%;
+  box-shadow:
+    1.25rem 0 0,
+    2.5rem 0 0;
+  opacity: 0.4;
+}
+
+.logo { flex: 0 0 calc(320px - 1.375rem); }
+.logo svg {
+  width: 5rem;
+  height: 100%;
+  fill: currentColor;
+}
+.logo span {
+  display: inline-block;
+  -webkit-transform: scale(0.6) translate(-2rem, -0.25rem);
+          transform: scale(0.6) translate(-2rem, -0.25rem);
+}
+
+.main-header form { margin: 0 1.375rem; }
+
+.active-user {
+  flex-grow: 1;
+  text-align: right;
+}
+.active-user .avatar {
+  float: right;
+  margin: 0;
+  cursor: pointer;
+}
+
+.users {
+  position: absolute;
+  z-index: 100;
+  top: calc(100% - 0.75rem);
+  right: 1rem;
+  -webkit-transform: scale(0.5) translateY(-2rem);
+          transform: scale(0.5) translateY(-2rem);
+  -webkit-transform-origin: calc(100% - 2rem) 0;
+          transform-origin: calc(100% - 2rem) 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+  opacity: 0;
+  pointer-events: none;
+  transition: 300ms ease;
+}
+.users.show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+.users:before,
+.users:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  right: 1.25rem;
+  border: 0.75rem solid transparent;
+  border-bottom-color: #fff;
+  pointer-events: none;
+}
+.users:before {
+  right: 1.1875rem;
+  border-width: 0.8125rem;
+  border-bottom-color: #ccc;
+}
+.users li {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+.users li:hover { background: #ecf1f5; }
+.users li:last-child { border: none; }
+.users li > *:not(.avatar) {
+  margin-left: 4.5rem;
+}
+.users li > * {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  opacity: 0;
+  transition: 600ms ease 100ms;
+}
+.users.show li > * {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.users p { margin: 0; }
+
+@media (max-width: 860px) {
+  .logo { flex: auto; }
+}
+
+@media (max-width: 720px) {
+  .main-header {
+    display: block;
+    flex: none;
+  }
+
+  .main-header form { margin: 1.5em 0 0.5em; }
+  .main-header form input { width: 100%; }
+
+  .active-user {
+    position: absolute;
+    top: 0.75em;
+    right: 1em;
+  }
+
+  .users {
+    top: calc(100% - 4.75rem);
+    right: 0.75em;
+  }
+}
+
+/* Inbox */
+
+.inbox {
+  display: flex;
+  flex: 1 auto;
+  height: calc(100% - 6.5em);
+}
+
+.email-list {
+  clear: both;
+  position: relative;
+  flex: 0 0 320px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  color: #fff;
+  background: #434753;
+}
+
+.email-list li:not(.no-messages) {
+  position: relative;
+  padding: 1.375rem;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+.email-list li:first-child { border: none; }
+.email-list li.active {
+  color: #434753;
+  background: #ecf1f5;
+}
+
+.email-list li > *:not(i) { overflow: auto; }
+
+.message-snippet {
+  margin: 0;
+  opacity: 0.5;
+}
+
+.message {
+  position: relative;
+  flex: 1 auto;
+  padding: 1.375rem;
+  overflow: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  background: #fff;
+  border: 1.375rem solid #ecf1f5;
+}
+
+.message .no-messages {
+  color: #434753;
+  opacity: 0.5;
+}
+.message .no-messages i:before {
+  margin-bottom: 1rem;
+  font-size: 6rem;
+}
+
+.message-actions {
+  position: absolute;
+  top: 3.25rem;
+  right: 1.375rem;
+}
+.message-actions li { display: inline-block; }
+
+.message .from { margin: 0.25rem 0; }
+.message .subject {
+  clear: both;
+  font-size: 1.5rem;
+  padding-top: 1.375rem;
+  margin: 1.375rem 0;
+  border-top: 1px solid rgba(0,0,0,0.15);
+}
