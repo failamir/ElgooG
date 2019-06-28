@@ -67,7 +67,7 @@ body {
     position: absolute;
     padding: 0;
     list-style: none;
-    width: 95.5px;
+    width: 120px;
 }
 
 .left-menu ul li {
@@ -806,9 +806,26 @@ body {
 
 /*================== Akhir YOUTUBE =================*/
 
-img.up:hover {
+img.right:hover {
     cursor: pointer;
     top: 20px;
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
+}
+.zoom {
+    text-align: left;   
+    box-sizing: border-box;
+  margin-left: -20px;
+  padding: 5px;
+  /*background-color: green;*/
+  transition: transform .2s;
+  width: 70px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
 }

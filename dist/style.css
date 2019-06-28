@@ -163,8 +163,8 @@ button {
 }
 
 .search img:hover{
-	height: 115%;
-	width: 115%;
+	height: 101%;
+	width: 101%;
 	box-shadow: 1px 1px 1px rgba(0,0,0,.1);
 	font-size: 400%;
 	/*text-align: left;*/
