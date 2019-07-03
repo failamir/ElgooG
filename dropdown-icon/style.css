@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #E74C3C;
+  color: white;
+  font: 16px Helvetica;
+  font-weight: 200;
+}
+
+.btn {
+  background: #2C3E50;
+  width: 77px;
+  height: 76px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  border-radius: 0 0 3px 0;
+}
+.btn:hover {
+  width: 77px;
+  height: 385px;
+  transition: all 0.4s ease-in-out;
+}
+.btn ul {
+  list-style-type: none;
+  margin: 0 0 0 0;
+  transition: all 0.2s ease-in-out;
+  background: #395067;
+}
+.btn ul li {
+  transition: all 0.2s ease-in-out;
+}
+.btn ul li:hover {
+  background: #476481;
+  transition: all 0.4s ease-in-out;
+}
+
+.fa-bars {
+  padding: 23px 0;
+  width: 80px;
+}
+.fa-bars:before {
+  padding: 23px 25px;
+  border-bottom: 1px solid #3e5871;
+}
+
+.fa-user {
+  padding: 23px 0;
+  width: 80px;
+}
+.fa-user:before {
+  padding: 23px 25px;
+  border-bottom: 1px solid #3e5871;
+}
+
+.fa-cogs {
+  padding: 23px 0;
+  width: 80px;
+}
+.fa-cogs:before {
+  padding: 23px 25px;
+  border-bottom: 1px solid #3e5871;
+}
+
+.fa-paper-plane {
+  padding: 23px 0;
+  width: 80px;
+}
+.fa-paper-plane:before {
+  padding: 23px 25px;
+  border-bottom: 1px solid #3e5871;
+}
+
+.fa-pie-chart {
+  padding: 23px 0;
+  width: 80px;
+}
+.fa-pie-chart:before {
+  padding: 23px 25px;
+  border-bottom: 1px solid #3e5871;
+}
+
+.fa:before {
+  font-size: 31px;
+}

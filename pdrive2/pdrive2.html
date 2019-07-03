@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>P Drive</title>
+	<link rel="stylesheet" type="text/css" href="pdrive2.css">
+	<script src="jquery-3.4.1.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $("#myDropdown").hide();
+	  $("#mD").focusin(function(){
+	  	$("#myDropdown").show();
+	  });
+	  $("#myDropdown").focusout(function(){
+	  	$("#myDropdown").hide();
+	  });
+
+	  $("#myDropdown1").hide();
+	  $("#mD1").focusin(function(){
+	  	$("#myDropdown1").show();
+	  });
+	  $("#mD1, #myDropdown1").focusout(function(){
+	  	$("#myDropdown1").hide();
+	  });
+
+	  $("#myDropdown2").hide();
+	  $("#mD2").focusin(function(){
+	  	$("#myDropdown2").show();
+	  });
+	  $("#mD2, #myDropdown2").focusout(function(){
+	  	$("#myDropdown2").hide();
+	  });
+
+	  $("#myDropdown3").hide();
+	  $("#mD3").focusin(function(){
+	  	$("#myDropdown3").show();
+	  });
+	  $("#mD3, #myDropdown3").focusout(function(){
+	  	$("#myDropdown3").hide();
+	  });
+
+	});
+	</script>
+</head>
+<body>
+<div class="header">
+	<a id="home" href="">P Drive</a>
+
+	<div class="dropdown">
+	  <button  class="dropbtn" id="mD">Search</button>
+	  <div id="myDropdown" class="dropdown-content">
+	  	<div class="menu-search">
+		  	<form class="search-form">
+		    <input class="search-input" type="text" name="search-bar" placeholder="Search file..">
+		  	</form>
+	  	</div>
+	  </div>
+	</div> 
+
+	<div id="mySidepanel1" class="sidepanelr">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">x</a>
+	  <a href="#">My profile</a>
+	  <a href="#">My account</a>
+	  <a href="#">Sign out</a>
+	</div>
+	<button class="openbtn right" onclick="openNav1()">Image</button>	
+
+	<div id="mySidepanel2" class="sidepanelr">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">x</a>
+	  <a href="#">Options</a>
+	  <a href="#">Upgrade</a>
+	  <a href="#">Language</a>
+	  <a href="#">Help & feedback</a>
+	</div>
+	<button class="openbtn right" onclick="openNav2()">Settings</button>
+
+	<div id="mySidepanel3" class="sidepanelr">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">x</a>
+	  <a href="#">Account</a>
+	  <a href="#">Search</a>
+	  <a href="#">Drive</a>
+	  <a href="#">Pmail</a>
+	  <a href="#">PTube</a>
+	  <a href="#">Translate</a>
+	</div>
+	<button class="openbtn right" onclick="openNav3()">Apps</button>
+</div>
+
+<div class="side">
+	<a href="">Files</a>
+	<a href="">Recent</a>
+	<a href="">Shared</a>
+	<a href="">Trash</a>
+</div>
+
+<div class="main">
+	<div class="content-c">
+		<div class="dropdown">
+		  <button class="dropbtn-c" id="mD1">New</button>
+		  <div id="myDropdown1" class="dropdown-content">
+		  	<a href="" style="border-bottom: 1px solid lightgray">Folder</a>
+		  	<a href="">Docs</a>
+		  	<a href="">Sheets</a>
+		  	<a href="">Slides</a>
+		  </div>
+		</div> 
+
+		<div class="dropdown">
+		  <button class="dropbtn-c" id="mD2">Upload</button>
+		  <div id="myDropdown2" class="dropdown-content">
+		  	<a href="">Files</a>
+		  	<a href="">Folder</a>
+		  </div>
+		</div>
+
+		<div class="dropdown">
+		  <button class="dropbtn-c" id="mD3">View</button>
+		  <div id="myDropdown3" class="dropdown-content">
+		  	<a href="">Tiles</a>
+		  	<a href="">List</a>
+		  </div>
+		</div>
+	</div>
+
+	<h2 style="margin-left: 20px;">Files</h2>
+
+	<div class="row" style="margin-left: 20px;">
+	  <div class="column">
+	    <div class="card">
+	      <div class="card-container">
+	      <a href=""><img src="img/folder-icon.png" style="width: 50%;"><br>Documents</a>
+	      <p>Thu at 8:49 PM</p>
+	  	  </div>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	    <div class="card">
+	      <div class="card-container">
+	      <a href=""><img src="img/folder-icon.png" style="width: 50%;"><br>Music</a>
+	      <p>Thu at 8:48 PM</p>
+	  	  </div>
+	    </div>
+	  </div>
+	  
+	  <div class="column">
+	    <div class="card">
+	      <div class="card-container">
+	      <a href=""><img src="img/folder-icon.png" style="width: 50%;"><br>Projects</a>
+	      <p>Thu at 8:47 PM</p>
+	  	  </div>
+	  	</div>
+	  </div>
+	  
+	  <div class="column">
+	    <div class="card">
+	      <div class="card-container">
+	      <a href=""><img src="img/folder-icon.png" style="width: 50%;"><br>Videos</a>
+	      <p>Thu at 8:46 PM</p>
+	  	  </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="row" style="margin-left: 20px;">
+	  <div class="column">
+	    <div class="card">
+	      <div class="card-container">
+	      <a href=""><img src="img/pdf-icon.png" style="width: 50%;"><br>Getting started</a>
+	      <p>Thu at 8:45 PM</p>
+	  	  </div>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	    <div class="card">
+	      <div class="card-container">
+	      <a href=""><img src="img/doc-icon.png" style="width: 50%;"><br>Documents</a>
+	      <p>Thu at 8:44 PM</p>
+	  	  </div>
+	    </div>
+	  </div>
+	  
+	  <div class="column">
+	    <div class="card">
+	      <div class="card-container">
+	      <a href=""><img src="img/xls-icon.png" style="width: 50%;"><br>Price list</a>
+	      <p>Thu at 8:43 PM</p>
+	  	  </div>
+	  	</div>
+	  </div>
+	  
+	  <div class="column">
+	    <div class="card">
+	      <div class="card-container">
+	      <a href=""><img src="img/ppt-icon.png" style="width: 50%;"><br>Presentation</a>
+	      <p>Thu at 8:42 PM</p>
+	  	  </div>
+	    </div>
+	  </div>
+	</div>
+
+</div>
+</body>
+<script type="text/javascript">
+
+/* Set the width of the sidebar to 250px (show it) */
+function openNav1() {
+  document.getElementById("mySidepanel1").style.width = "250px";
+  document.getElementById("mySidepanel2").style.width = "0";
+  document.getElementById("mySidepanel3").style.width = "0";
+}
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav1() {
+  document.getElementById("mySidepanel1").style.width = "0";
+}
+// Settings
+function openNav2() {
+  document.getElementById("mySidepanel2").style.width = "250px";
+  document.getElementById("mySidepanel1").style.width = "0";
+  document.getElementById("mySidepanel3").style.width = "0";
+}
+
+function closeNav2() {
+  document.getElementById("mySidepanel2").style.width = "0";
+} 
+// Profile
+function openNav3() {
+  document.getElementById("mySidepanel3").style.width = "250px";
+  document.getElementById("mySidepanel1").style.width = "0";
+  document.getElementById("mySidepanel2").style.width = "0";
+}
+
+function closeNav3() {
+  document.getElementById("mySidepanel3").style.width = "0";
+} 
+</script>
+</html>
+
+
+
+
+<!------------------------------------------------------------------>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+
+/*
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+*/
+/*
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn-c')) {
+  var myDropdown1 = document.getElementById("myDropdown1");
+    if (myDropdown1.classList.contains('show')) {
+      myDropdown1.classList.remove('show');
+    }
+  }
+}
+
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn-c')) {
+  var myDropdown2 = document.getElementById("myDropdown2");
+    if (myDropdown2.classList.contains('show')) {
+      myDropdown2.classList.remove('show');
+    }
+  }
+}
+
+function myFunction3() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn-c')) {
+  var myDropdown3 = document.getElementById("myDropdown3");
+    if (myDropdown3.classList.contains('show')) {
+      myDropdown3.classList.remove('show');
+    }
+  }
+}
+*/
+</script>
+
+<!--
+	<div class="content-h">
+		<div class="dropdown">
+		  <button  class="dropbtn-h" style=" margin-left: 50px;" onclick="myFunction4()">Name &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</button>
+		  <div id="myDropdown4" class="dropdown-content" style="margin-left: 50px;">
+		  	<a href="">A to Z</a>
+		  	<a href="">Z to A</a>
+		  </div>
+		</div> 
+
+		<div class="dropdown">
+		  <button class="dropbtn-h" onclick="myFunction5()">Modified &emsp;&emsp;&emsp;&emsp;&emsp;</button>
+		  <div id="myDropdown5" class="dropdown-content">
+		  	<a href="">Older to newer</a>
+		  	<a href="">Newer to Older</a>
+		  </div>
+		</div>
+
+		<a href=""class="dropbtn-h" style="text-decoration: none;">Sharing&emsp;&emsp;&emsp;&emsp;</a>
+
+		<div class="dropdown">
+		  <button class="dropbtn-h" onclick="myFunction6()">Size &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</button>
+		  <div id="myDropdown6" class="dropdown-content">
+		  	<a href="">Smaller to larger</a>
+		  	<a href="">Larger to smaller</a>
+		  </div>
+		</div>
+	</div>
+
+	<div class="content-l">
+		<a href="">Documents</a>
+	</div>
+-->

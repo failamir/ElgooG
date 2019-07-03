@@ -1,0 +1,56 @@
+// Variables
+$bg-clr: #E74C3C
+$btn-clr: #2C3E50
+
+// Icon List
+$icons: bars user cogs paper-plane pie-chart
+
+// Reset
+*
+ margin: 0
+ padding: 0
+
+// Body
+body
+ background: $bg-clr
+ color: white
+ font: 16px Helvetica
+ font-weight: 200
+
+// Button
+.btn
+ background: $btn-clr
+ width: 77px
+ height: 76px
+ overflow: hidden
+ transition: all .2s ease-in-out
+ border-radius: 0 0 3px 0
+ &:hover
+  width: 77px
+  height: 385px
+  transition: all .4s ease-in-out
+ ul
+  list-style-type: none
+  margin: 0 0 0 0
+  transition: all .2s ease-in-out
+  background: lighten($btn-clr, 7%)
+  li
+   transition: all .2s ease-in-out
+   &:hover
+    background: lighten($btn-clr, 15%)
+    transition: all .4s ease-in-out
+   
+// Icon Loop
+@each $icon in $icons
+ .fa-#{$icon}
+  padding: 23px 0
+  width: 80px
+  &:before
+   padding: 23px 25px
+   border-bottom: 1px solid lighten($btn-clr, 10%)
+
+// Icon Font Size
+.fa
+ &:before
+  font-size: 31px
+ 

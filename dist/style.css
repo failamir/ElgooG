@@ -15,12 +15,16 @@ body {
   
 }
 
+body.bg-transparent{
+	/* opacity: 0.6; */
+}
+
 .bg-transparent{
-	opacity: 0.1;
-	background-image: url("img/hagia_sophia.jpg");
+	/* opacity: 0.6; */
+	background: url("img/bgweb.jpg");
 	background-repeat: no-repeat;
-	background-position: right top;
-	background-attachment: fixed;
+	/* background-position: right top; */
+	/* background-attachment: fixed; */
 	background-size: cover;
 	/*background : transparent\500;*/
 }
@@ -132,13 +136,14 @@ button {
 
 .search {
 	padding: 15px;
+	padding-left: 90px;
 	margin-left: 20px;
 	text-align: left;
 	clear: both;
 	margin: 11% 0 0 0;
 	border-color: #ffffff;
 	/*position: absolute;*/
-	margin-top: -70px;
+	margin-top: 20px;
 
 }
 
@@ -176,7 +181,7 @@ button {
 
 .search input {
 	
-	width: 570px;
+	width: 470px;
 	border: 1px solid #D8D8D8;
 	padding: 5px;
 	font-size: 15pt;
@@ -187,7 +192,7 @@ button {
 }
 
 .search-bar {
-	max-width: 80%;
+	max-width: 50%;
 	max-height: 110%;
 	border-color: #646464;
 	border-radius: 30px;

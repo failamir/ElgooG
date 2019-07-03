@@ -10,11 +10,13 @@
       <link rel="stylesheet" href="dist/style2.css">
       <link rel="stylesheet" href="dist/style.css">
       <link rel="stylesheet" href="dist/bg-style.css">
+      <link rel="stylesheet" href="dist/dropdown.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       
 </head>
 
 <body>
-
+<!-- <div class="bg-transparent"> -->
 <!-- Sidebar -->
 <div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
   <button class="w3-bar-item sidebarv2 w3-button w3-large " onclick="w3_close()"> &times;</button>
@@ -29,20 +31,37 @@
   <a href="#" class="w3-bar-item sidebar w3-button">Store</a>
 </div>
 
+  <!-- Dropdown -->
+
+  <div class="btn">
+      <span class="fa fa-bars"></span>
+  <ul>
+      <a href="loginfix/index.html"><li class="fa fa-user"></li></a>
+      <a href="loginfix/index.html"><li class="fa fa-envelope"></li></a>
+      <a href="loginfix/index.html"><li class="fa fa-cloud"></li></a>
+      <a href="loginfix/index.html"><li class="fa fa-play"></li></a>
+    <li class="fa fa-cogs"></li>
+      </ul>
+    </div>
+    <!-- End Dropdown -->  
+
 <!-- Page Content -->
 <!-- <div class="bg-transparent"></div> -->
   <div class="top-toolbar">
   <nav>
+  
+  <a class="home" href="loginfix/index.html">      </a>
     <a class="home" href="loginfix/index.html">+You</a>
     <a class="home" href="loginfix/index.html">Papa mail</a>
     <a class="home" href="loginfix/index.html">Images</a>
     <!-- <img src="dist/img/me.png" /> -->
+    
     <a href="loginfix/index.html"><button class="signin">Login</button></a>
   </nav>
   <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
 
 <div>
-  <button class="w3-button w3-white w3-xxsmall" onclick="w3_open()">&#9776;</button>
+  <!-- <button class="w3-button w3-white w3-xxsmall" onclick="w3_open()">&#9776;</button> -->
   <!-- <div class="w3-container">
     <h1>Sidebar Overlay</h1>
     <p>The w3-overlay class can be used to create an overlay effect, when opening the sidebar. The w3-overlay class adds a black background with a 50% opacity to the "page content" - this effect will "highlight" the side navigation</p>
@@ -102,6 +121,7 @@
       <a href="#">Settings</a>
     </nav>
   </footer>
+</div>
 </div>
 </div>
 </body>

@@ -1,0 +1,35 @@
+div, p, a, li, td {
+  -webkit-text-size-adjust: none;
+}
+@media only screen and (max-width: 480px) {
+  div[class="showmob"] {
+    display: block;
+    line-height: 1;
+    max-height: none;
+    mso-hide: none;
+    overflow: visible ;
+  }
+  table[class="showmob"] {
+    display: block;
+    line-height: 1;
+    max-height: none;
+    mso-hide: none;
+    overflow: visible;
+  }
+  div[class="nomob"] {
+    display: none;
+    visibility: hidden;
+  }
+  table[class="container"] {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    width: 400px;
+  }
+  td[class="container"] {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    width: 400px;
+  }
+}
