@@ -42,13 +42,14 @@ li a:hover:not(.active) {
 @media screen and (max-width: 700px) {
   .row, .navbar {   
     flex-direction: column;
+    background-color: red;
   }
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #EEEEEE;
+    background-color: red;
 }
 
 .left-menu {

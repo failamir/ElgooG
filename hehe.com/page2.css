@@ -4,7 +4,7 @@
 }
 
 .semua {
-	background:#ff7f00;
+	background:red;
 	width: 100%;
 }
 
@@ -59,12 +59,13 @@ input{
 
 
 
+
 .logoutama{
   margin-left: 70px;
   margin-top: -10px;
 	height: 42px;
 	width: 42px;
-	 box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+	 
 }
 
 .search {
@@ -84,105 +85,90 @@ input{
 
 }
 
+
+
+
 .all{
-	background: #ff7f00;
-	width: 832px;
+	background: red;
+	width: 100%;
 	margin: 5px auto;
 }
  
 
+ .all .leftside {
+  float: left;
+  width: 80%;
+  height: 1000px;
+  background-color: #ff7f00;
+ }
+
+ .all .leftside .kotakvidio {
+  margin-top:5%;
+  margin-left: 10%;
+ }
 
 
 
-.all .contain .mySlides {display:none;}
+ .all .leftside .judul {
+  margin-top: 10px;
+  width: 1000px;
+  margin-left: 10%;
+  color: black;
+  font-size: 15px;
+} 
 
 
-.all .active {
-  background-color: #717171;
-}
+ .all .leftside .didelok {
+  margin-top: 2px;
+  width: 1000px;
+  margin-left: 10%;
+  color: black;
+  font-size: 15px;
+} 
 
-
-.all .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-
-.badan{
-	height: 900px;
-}
-
- 
-.footer {
-	padding: 0;
-	margin: 0;
-	background: red;
-	overflow: hidden;
-	width: 100%;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.8);
-
-}
-
-.footer .copyright {
-	width: 500px;
-	margin-left: 33%;
-	margin-right: 0;
-	color: white;
-	text-align: center;
+ .all .leftside .chanelbig {
+  margin-top: 2px;
+  width: 1000px;
+  margin-left: 10%;
+  color: black;
+  font-size: 15px;
 } 
 
 
 
-.gambartumb{
-	width: 198px;
+.all .rightside {
+  margin-top: 40px;
+  height: 960px;
+  float: left;
+  width: 20%;
+  background-color: #ff7f00;
+
+}
+
+
+.all .rightside .gambartumb{
+	width: 100%;
 	height: 112px;
 	box-shadow: 1px 1px 4px rgba(0,0,0,0.8);
 }
 
-.vid-ul{
-  display: block;
-  list-style-type: none;
-  height:  374px;
-  padding-left: 5px;
-  background-color: #ff7f00 ;
+
+.kotaktumb{
+  margin-top: 5%;
+  margin-left: 10%;
 }
-.vid-li{
-  display: inline-block;
-  height:  175px;
-  width: 196px;
-  margin-right: 5px;
-  margin-top: 10px;
-  background-color: #ff7f00 ;
-  
-}
+
 .vid{
   width: 196px;
   height: 110px;
-  margin: 0;
-  background-color: #ff7f00;
+  margin-left: : 20%;
+
 }
 
 .vid-data{
   margin: 0;
   padding: 0;
-  background-color: #ff7f00 ;
+
 }
 .title{
   display: block;
@@ -190,7 +176,7 @@ input{
   width: 180px;
   margin-top: 5px;
   padding: 0;
-  background-color: #ff7f00;
+
   
 }
 .title-name{
@@ -218,11 +204,11 @@ input{
 
 
 
-.all .channel{
+.channel{
   height: 15px;
   width: 196px;
   margin-top: -3px;
-  background-color: #ff7f00;
+
 }
 .channel-name{
   position: relative;
@@ -240,12 +226,11 @@ input{
   width: 196px;
   margin-top: -5px;
   padding: 0;
-  background-color:#ff7f00 ;
 }
 .all .views-data{
   positon: relative;
   font-family: sans-serif;
-  color: white;
+  color: black;
   font-size: 11px;
 }
 .title-kategori {
@@ -253,8 +238,5 @@ input{
 	background-color: red;
 }
 
-.kategorividio{
-	width: 200px;
-}
 
 

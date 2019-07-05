@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en" >
 
 <head>
@@ -43,4 +43,296 @@
 
 </body>
 
+</html> -->
+
+<!-- ---------------------------------------------------------------------------------- -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../dist/dropdown.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+/* .footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+} */
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+.footer {
+	/*position: fixed;
+	bottom: 0;
+ 	height: 42px;
+ 	width: 100%;
+ 	font-size: 9.5pt;
+	background-image: -moz-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+	background-image: -o-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F5F5F5), color-stop(1, #F0F0F0));
+	background-image: -webkit-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+	background-image: linear-gradient(to bottom, #F5F5F5 0%, #F0F0F0 100%);*/
+	position: fixed;
+    bottom: 0;
+    height: 42px;
+    width: 100%;
+    font-size: 9.5pt;
+    background-image: -moz-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+    background-image: -o-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F5F5F5), color-stop(1, #F0F0F0));
+    background-image: -webkit-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+    background-image: linear-gradient(to bottom, #29fb7d 0%, #123126 100%);
+    opacity: 0.92;
+ }
+
+ .footerv2 {
+	/*position: fixed;
+	bottom: 42px;
+ 	height: 42px;
+ 	width: 100%;
+ 	font-size: 9.5pt;
+	background-image: -moz-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+	background-image: -o-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F5F5F5), color-stop(1, #F0F0F0));
+	background-image: -webkit-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+	background-image: linear-gradient(to bottom, #F5F5F5 0%, #F0F0F0 100%);*/
+	position: fixed;
+    bottom: 42px;
+    height: 42px;
+    width: 100%;
+    font-size: 9.5pt;
+    background-image: -moz-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+    background-image: -o-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F5F5F5), color-stop(1, #F0F0F0));
+    background-image: -webkit-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+    background-image: linear-gradient(to bottom, #48efd7 0%, #4855b5 100%);
+    opacity: 0.89;
+ }
+
+.footer-left {
+	float: left;
+	margin-left: 16px;
+}
+
+.footer-leftv2 {
+	float: left;
+	margin-left: 16px;
+	display: inline-block;
+	padding: 15px 0 0 0;
+}
+
+.av2 {
+	padding: 3px 14px;
+ 	color: #ffffff;
+}
+
+.footer-right {
+	float: right;
+	margin-right: 16px;
+}
+
+footer nav {
+	display: inline-block;
+	padding: 15px 0 0 0;
+}
+
+footer nav a {
+ 	padding: 3px 14px;
+ 	color: #ffffff;
+}
+
+footer nav a:hover {
+	color: #000000;
+}
+</style>
+</head>
+<body>
+<!-- Dropdown -->
+      <!-- <link rel="stylesheet" href="../../dist/dropdown.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+      <div class="btn">
+          <span class="fa fa-bars"></span>
+      <ul>
+          <a href="loginfix/index.html"><li class="fa fa-user"></li></a>
+          <a href="loginfix/index.html"><li class="fa fa-envelope"></li></a>
+          <a href="loginfix/index.html"><li class="fa fa-cloud"></li></a>
+          <a href="loginfix/index.html"><li class="fa fa-play"></li></a>
+        <li class="fa fa-cogs"></li>
+          </ul>
+        </div>
+        <!-- End Dropdown -->
+<div class="header">
+  <h1>Papa Maps</h1>
+  <p>One best of maps application.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Papa Maps Here.</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <!-- <div class="fakeimg" style="height:200px;">  -->
+        <img src="../dist/img/hagia_sophia.jpg" height="300px" width="600px" alt=""> 
+      <!-- </div> -->
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+      <img src="../dist/img/hagia_sophia.jpg" height="300px" width="600px" alt="">
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <!-- <div class="fakeimg" style="height:100px;">Image</div> -->
+      <img src="../dist/img/me.png" height="40px" width="80px" alt=""> 
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="footer">
+  <h2>Footer</h2>
+</div> -->
+<div class="footerv2">
+    <nav class="footer-leftv2">
+      <a class="av2" href="#">Indonesia</a>
+    </nav>
+</div>
+
+<div class="footer">
+<!-- <footer class="bottom-toolbar">   -->
+  <nav class="footer-left">
+    <a href="#">Advertising</a>
+    <a href="#">Business</a>
+    <a href="#">About</a>
+    <a href="#">How to Use</a>
+  </nav>
+  <nav class="footer-right">
+    
+    <a href="#">New Privacy &amp; Terms</a>
+    <a href="#">Settings</a>
+  </nav>
+<!-- </footer> -->
+</div>
+
+</body>
 </html>
+

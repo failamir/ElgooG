@@ -181,7 +181,7 @@ p{
   padding: 0;
   margin: 0;
   margin-left: 300px;
-  border-bottom: 4px solid rgb(204,24,30);
+  border-bottom: 4px solid rgb(24, 204, 39);
 }
 .top-menu-li{
   display: inline-block;
@@ -489,7 +489,7 @@ p{
 }
 #boy-heading{
   font-family: Roboto, arial, sans-serif;
-  color: rgb(204,24,30);
+  color: rgb(24, 204, 33);
   font-size: 11px;
   height: 7px;
   font-weight: 600;
@@ -543,7 +543,7 @@ p{
   vertical-align: middle;
   border: 1px solid rgb(22,122,198);
   border-radius: 2px;
-  background-color: rgb(22,122,198);
+  background-color: rgb(198, 101, 22);
   text-decoration: none;
 }
 .sign-in{
@@ -560,7 +560,7 @@ p{
   cursor: pointer;
   height: 28px;
   width: 186px;
-  background-color: rgb(204,24,30);
+  background-color: rgb(39, 204, 24);
 }
 .side-nav-button-link{
   display: block;
@@ -623,7 +623,9 @@ p{
   vertical-align: middle;
   border: 1px solid rgb(22,122,198);
   border-radius: 2px;
-  background-color: rgb(22,122,198);
+  /* background-color: rgb(22,122,198);
+   */
+   background-color: rgb(198, 101, 22);
   text-decoration: none;
 }
 

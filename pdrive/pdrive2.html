@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>P Drive</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="pdrive2.css">
+	<script src="jquery-3.4.1.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $("#myDropdown, #myDropdown1, #myDropdown2, #myDropdown3").hide();
+	  $("#hr2, #hr3, #hr4").hide();
+	  $("#mo3, #mo4, #mo5").hide();
+
+	  $("#mD").focusin(function(){
+	  	$("#myDropdown").show();
+	  });
+	  $("#myDropdown").focusout(function(){
+	  	$("#myDropdown").hide();
+	  });
+
+	  $("#mD1").focusin(function(){
+	  	$("#myDropdown1").show();
+	  });
+	  $("#mD1, #myDropdown1").focusout(function(){
+	  	$("#myDropdown1").hide();
+	  });
+	  
+	  $("#mD2").focusin(function(){
+	  	$("#myDropdown2").show();
+	  });
+	  $("#mD2, #myDropdown2").focusout(function(){
+	  	$("#myDropdown2").hide();
+	  });
+
+	  $("#mD3").focusin(function(){
+	  	$("#myDropdown3").show();
+	  });
+	  $("#mD3, #myDropdown3").focusout(function(){
+	  	$("#myDropdown3").hide();
+	  });
+
+	  $("#b1").click(function(){
+	  	$("#hr1, #mo1, #mo2").show();
+	  	$("#mD1, #mD2, #mD3").show();
+	  	$("#hr2, #hr3, #hr4, #mo3, #mo4, #mo5").hide();
+	  });
+
+	  $("#b2").click(function(){
+	  	$("#hr2, #mo3").show();
+	  	$("#mD1, #mD2, #mD3").hide();
+	  	$("#hr1, #hr3, #hr4, #mo1, #mo2, #mo4, #mo5").hide();
+	  });
+
+	  $("#b3").click(function(){
+	  	$("#hr3, #mo4").show();
+	  	$("#mD1, #mD2, #mD3").hide();
+	  	$("#hr1, #hr2, #hr4, #mo1, #mo2, #mo3, #mo5").hide();
+	  });
+
+	  $("#b4").click(function(){
+	  	$("#hr4, #mo5").show();
+	  	$("#mD1, #mD2, #mD3").hide();
+	  	$("#hr1, #hr2, #hr3, #mo1, #mo2, #mo3, #mo4").hide();
+	  });
+	});
+	</script>
+	
+</head>
+<body>
+<div class="header">
+	<a id="home" href="pdrive1.html">P Drive</a>
+
+	<div class="dropdown">
+	  <button  class="dropbtn" id="mD">Search</button>
+	  <div id="myDropdown" class="dropdown-content">
+	  	<div class="menu-search">
+		  	<form class="search-form">
+		    <input class="search-input" type="text" name="search-bar" placeholder="Search file..">
+		  	</form>
+	  	</div>
+	  </div>
+	</div> 
+
+	<div id="mySidepanel1" class="sidepanelr">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">x</a>
+	  <a href="#">My profile</a>
+	  <a href="#">My account</a>
+	  <a href="#">Sign out</a>
+	</div>
+	<button class="openbtn right" onclick="openNav1()">Account</button>	
+
+	<div id="mySidepanel2" class="sidepanelr">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">x</a>
+	  <a href="#">Options</a>
+	  <a href="#">Upgrade</a>
+	  <a href="#">Language</a>
+	  <a href="#">Help & feedback</a>
+	</div>
+	<button class="openbtn right" onclick="openNav2()">Settings</button>
+
+	<div id="mySidepanel3" class="sidepanelr">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">x</a>
+	  <a href="#">Account</a>
+	  <a href="#">Search</a>
+	  <a href="#">Drive</a>
+	  <a href="#">Pmail</a>
+	  <a href="#">PTube</a>
+	  <a href="#">Translate</a>
+	</div>
+	<button class="openbtn right" onclick="openNav3()">Apps</button>
+</div>
+
+<div class="side">
+	<button id="b1">Files</button>
+	<button id="b2">Recent</button>
+	<button id="b3">Shared</button>
+	<button id="b4">Trash</button>
+</div>
+
+<div class="main">
+	<div class="content-c">
+		<div class="dropdown">
+		  <button class="dropbtn-c" id="mD1">New</button>
+		  <div id="myDropdown1" class="dropdown-content">
+		  	<a href="" style="border-bottom: 1px solid lightgray">Folder</a>
+		  	<a href="">Docs</a>
+		  	<a href="">Sheets</a>
+		  	<a href="">Slides</a>
+		  </div>
+		</div> 
+
+		<div class="dropdown">
+		  <button class="dropbtn-c" id="mD2">Upload</button>
+		  <div id="myDropdown2" class="dropdown-content">
+		  	<a href="">Files</a>
+		  	<a href="">Folder</a>
+		  </div>
+		</div>
+
+		<div class="dropdown">
+		  <button class="dropbtn-c" id="mD3">View</button>
+		  <div id="myDropdown3" class="dropdown-content">
+		  	<a href="">Tiles</a>
+		  	<a href="">List</a>
+		  </div>
+		</div>
+	</div>
+
+	<h2 id="hr1" style="margin-left: 20px;">Files</h2>
+	<h2 id="hr2" style="margin-left: 20px;">Recent</h2>
+	<h2 id="hr3" style="margin-left: 20px;">Shared</h2>
+	<h2 id="hr4" style="margin-left: 20px;">Trash</h2>
+
+	<div class="row" id="mo1" style="margin-left: 20px;">
+	  <div class="column">
+	    <div class="card">
+	      <div class="card-container">
+	      <a href=""><img src="img/folder-icon.png" style="width: 50%;"><br>Documents</a>
+	      <p>Thu at 8:49 PM</p>
+	  	  </div>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	    <div class="card">
+	      <div class="card-container">
+	      <a href=""><img src="img/folder-icon.png" style="width: 50%;"><br>Music</a>
+	      <p>Thu at 8:48 PM</p>
+	  	  </div>
+	    </div>
+	  </div>
+	  
+	  <div class="column">
+	    <div class="card">
+	      <div class="card-container">
+	      <a href=""><img src="img/folder-icon.png" style="width: 50%;"><br>Projects</a>
+	      <p>Thu at 8:47 PM</p>
+	  	  </div>
+	  	</div>
+	  </div>
+	  
+	  <div class="column">
+	    <div class="card">
+	      <div class="card-container">
+	      <a href=""><img src="img/folder-icon.png" style="width: 50%;"><br>Videos</a>
+	      <p>Thu at 8:46 PM</p>
+	  	  </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="row" id="mo2" style="margin-left: 20px;" id="ob5">
+	  <div class="column">
+	    <div class="card">
+	      <div class="card-container">
+	      <a href=""><img src="img/pdf-icon.png" style="width: 50%;"><br>Getting started</a>
+	      <p>Thu at 8:45 PM</p>
+	  	  </div>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	    <div class="card">
+	      <div class="card-container">
+	      <a href=""><img src="img/doc-icon.png" style="width: 50%;"><br>Documents</a>
+	      <p>Thu at 8:44 PM</p>
+	  	  </div>
+	    </div>
+	  </div>
+	  
+	  <div class="column">
+	    <div class="card">
+	      <div class="card-container">
+	      <a href=""><img src="img/xls-icon.png" style="width: 50%;"><br>Price list</a>
+	      <p>Thu at 8:43 PM</p>
+	  	  </div>
+	  	</div>
+	  </div>
+	  
+	  <div class="column">
+	    <div class="card">
+	      <div class="card-container">
+	      <a href=""><img src="img/ppt-icon.png" style="width: 50%;"><br>Presentation</a>
+	      <p>Thu at 8:42 PM</p>
+	  	  </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="sub-sections" id="mo3">
+		<h2 style="padding-top: 250px;">You haven't viewed any documents recently</h2>
+		<p>Keep your documents in P Drive to get to them from any device.</p>
+	</div>
+
+	<div class="sub-sections" id="mo4">
+		<h2 style="padding-top: 250px;">Share files and folders</h2>
+		<p>Let friends, family or colleagues view or even edit your files.</p>
+	</div>
+
+	<div class="sub-sections" id="mo5">
+		<h2 style="padding-top: 250px;">Your Trash is empty</h2>
+		<p>No items to restore.</p>
+	</div>
+</div>
+
+<script type="text/javascript">
+/* Set the width of the sidebar to 250px (show it) */
+function openNav1() {
+  document.getElementById("mySidepanel1").style.width = "250px";
+  document.getElementById("mySidepanel2").style.width = "0";
+  document.getElementById("mySidepanel3").style.width = "0";
+}
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav1() {
+  document.getElementById("mySidepanel1").style.width = "0";
+}
+// Settings
+function openNav2() {
+  document.getElementById("mySidepanel2").style.width = "250px";
+  document.getElementById("mySidepanel1").style.width = "0";
+  document.getElementById("mySidepanel3").style.width = "0";
+}
+
+function closeNav2() {
+  document.getElementById("mySidepanel2").style.width = "0";
+} 
+// Profile
+function openNav3() {
+  document.getElementById("mySidepanel3").style.width = "250px";
+  document.getElementById("mySidepanel1").style.width = "0";
+  document.getElementById("mySidepanel2").style.width = "0";
+}
+
+function closeNav3() {
+  document.getElementById("mySidepanel3").style.width = "0";
+} 
+</script>
+</body>
+</html>
+
+<!--
+	Designed by Ilham Yusuf Balanda - 17.11.1289
+-->
